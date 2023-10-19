@@ -1,4 +1,4 @@
-# 彩铭羽 Visual Obfuscator
+# 彩銘羽 Visual Obfuscator
 あなたのShellコードを視覚的に難読化する。
 
 This tool can help you obfuscate and encrypt shell code scripts to help improve security.
@@ -15,7 +15,7 @@ And finally, wait for the output "OK!" Can.
 - Theory supports all Linux and Android
 
 ## Warning
-- Do not use on all kinds of harmful files, 彩铭羽 will not be responsible for any harmful time caused by the use of this tool.
+- Do not use on all kinds of harmful files, 彩銘羽 will not be responsible for any harmful time caused by the use of this tool.
 - Do not use them on binary files unless you convert them to strings or place them at the end of the encrypted file.
 - Do not use in a production environment.
 - If it works well, order a star for the project.

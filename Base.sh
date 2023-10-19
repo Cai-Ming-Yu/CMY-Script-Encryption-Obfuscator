@@ -1,8 +1,8 @@
 #!/bin/sh
 
-: 'Copyright © 2023-2023 彩铭羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)'
+: 'Copyright © 2023-2023 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)'
 : GitHub Repo: https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator
-: このスクリプトは彩铭羽が独自に作成したものです。このプロジェクトをサポートしていただける方は、私のGitHubリポジトリ https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator にアクセスして、私に星をつけてください！
+: このスクリプトは彩銘羽が独自に作成したものです。このプロジェクトをサポートしていただける方は、私のGitHubリポジトリ https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator にアクセスして、私に星をつけてください！
 
 clear;
 
@@ -42,13 +42,13 @@ function makeNewFile () {
         }
     }
     echo -en "#!/bin/sh
-: << 彩铭羽
+: << 彩銘羽
 
-彩铭羽 Visual Obfuscator
+彩銘羽 Visual Obfuscator
 
 バージョン番号: Version 1.0.0 (2023.10.16)
 
-著者: 彩铭羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)
+著者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)
 
 GitHub Repo: https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator
 
@@ -56,11 +56,11 @@ GitHub Repo: https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator
 
 This file uses Visual Obfuscator for encryption obfuscates the file, please DO NOT modify the file!
 
-彩铭羽
+彩銘羽
 
 " > "${output}";
     echo -en "${shell}" | while read -n 1 code;do [[ "${code}" == '' || "${code}" == ' ' ]] && echo ' \' >> "${output}" || echo "${code}\\" >> "${output}";done;
-    echo -en ": '著者: 彩铭羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)';" >> "${output}";
+    echo -en ": '著者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)';" >> "${output}";
     echo "OK!";
     return 0;
 }
