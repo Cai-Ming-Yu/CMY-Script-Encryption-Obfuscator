@@ -1,6 +1,8 @@
 #!/bin/sh
 
-: このスクリプトは彩铭羽が独自に作成したものです。このプロジェクトをサポートしていただける方は、私のGitHubリポジトリ https://github.com/Cai-Ming-Yu/CMY-Script-Obfuscator にアクセスして、私に星をつけてください！
+: 'Copyright © 2023-2023 彩铭羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)'
+: GitHub Repo: https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator
+: このスクリプトは彩铭羽が独自に作成したものです。このプロジェクトをサポートしていただける方は、私のGitHubリポジトリ https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator にアクセスして、私に星をつけてください！
 
 clear;
 
