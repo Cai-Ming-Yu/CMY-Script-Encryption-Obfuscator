@@ -1,29 +1,29 @@
 #!/bin/sh
 
 : 'Copyright © 2023-2023 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)'
-: GitHub Repo: https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator
-: このスクリプトは彩銘羽が独自に作成したものです。このプロジェクトをサポートしていただける方は、私のGitHubリポジトリ https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator にアクセスして、私に星をつけてください！
+: GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator
+: このスクリプトは、彩銘羽が独自に作成したものです。このプロジェクトをサポートしていただける方は、私のGitHubリポジトリ https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator にアクセスをしてStarを付けてくれると嬉しいです！
 
 clear;
 
 function getInputFile () {
-    printf "ファイルパスを入力(Input file dir)：";
+    printf "ファイルパスを入力してください (Input file dir)：";
     read input;
     [[ ! -f "${input}" ]] && {
-        echo "ファイルが存在しない(Not a real file)";
+        echo "ファイルが存在しません (Not a real file)";
         exit 1;
     }
     return 0;
 }
 
 function getOutputFile () {
-    printf "出力パスを入力(output file dir)：";
+    printf "出力パスを入力してください (output file dir)：";
     read output;
     [[ -e "${output}" ]] && {
         [[ -f "${output}" ]] && {
-            echo "警告、ファイルはすでに存在します(Warning, file already exist)";
+            echo "警告:ファイルはすでに存在します (Warning, file already exist)";
         } || {
-            echo "パスが利用できません(Not available)";
+            echo "そのパスは使用できません (Not available)";
             exit 1;
         }
     }
@@ -37,7 +37,7 @@ function makeNewFile () {
         chattr -i "${output}" >/dev/null 2>&1;
         rm -rf "${output}" >/dev/null 2>&1;
         [[ -f "${output}" ]] && {
-            echo "ファイルを削除できない(Cannot delete file)";
+            echo "ファイルを削除できません (Cannot delete file)";
             exit 1;
         }
     }
@@ -46,13 +46,13 @@ function makeNewFile () {
 
 彩銘羽 Visual Obfuscator
 
-バージョン番号: Version 1.0.0 (2023.10.16)
+バージョン: Version 1.0.0 (2023.10.16)
 
-著者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)
+開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)
 
-GitHub Repo: https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator
+GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator
 
-使用日: $(date '+%x %A %r')
+日時: $(date '+%x %A %r')
 
 This file uses Visual Obfuscator for encryption obfuscates the file, please DO NOT modify the file!
 
@@ -60,7 +60,7 @@ This file uses Visual Obfuscator for encryption obfuscates the file, please DO N
 
 " > "${output}";
     echo -en "${shell}" | while read -n 1 code;do [[ "${code}" == '' || "${code}" == ' ' ]] && echo ' \' >> "${output}" || echo "${code}\\" >> "${output}";done;
-    echo -en ": '著者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)';" >> "${output}";
+    echo -en ": '開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)';" >> "${output}";
     echo "OK!";
     return 0;
 }
