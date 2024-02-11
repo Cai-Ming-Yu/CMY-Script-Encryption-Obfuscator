@@ -1,4 +1,4 @@
-# 彩銘羽 Visual Obfuscator
+# 彩銘羽 Script Encryption Obfuscator
 あなたのシェルコードを視覚的に難読化します。
 
 This tool can help you obfuscate and encrypt shell code scripts to help improve security.
@@ -37,4 +37,4 @@ and ```overfiles``` mode will overwrite the original file.
 - Do not use in a production environment.
 - If it works well, order a star for the project.
 
-## [License](https://github.com/Cai-Ming-Yu/CMY-Visual-Obfuscator/blob/C-M-Y/LICENSE)
+## [License](https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator/blob/C-M-Y/LICENSE)
