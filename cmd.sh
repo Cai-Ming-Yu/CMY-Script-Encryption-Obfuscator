@@ -1,8 +1,10 @@
 #!/bin/sh
 
+
 # 'Copyright © 2023-2024 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)'
 # GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator
 # このスクリプトは、彩銘羽が独自に作成したものです。このプロジェクトをサポートしていただける方は、私のGitHubリポジトリ https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator にアクセスをしてStarを付けてくれると嬉しいです！
+
 
 mode="${1}"
 num="${2}"
