@@ -28,11 +28,11 @@ case "${mode}" in
             let num--
         done
         [[ "${output}" != '' ]] && {
-            echo -en "#!/bin/sh\n\n\n #  彩銘羽 Script Encryption Obfuscator\n\n #  バージョン: Version 1.1.0 (2024.02.11)\n\n #  開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)\n\n #  GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator\n\n #  日時: $(date '+%x %A %r')\n\n #  This file uses Script Encryption Obfuscator for encryption obfuscates the file, please DO NOT modify the file!\n\n\n" >"${output}"
+            echo -en "#!/bin/sh\n\n\n #  彩銘羽 Script Encryption Obfuscator\n\n #  バージョン: Version 1.1.0 (2024.02.11)\n\n #  開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)\n\n #  GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator\n\n #  日時: $(date '+%Y-%m-%d %H:%M:%S')\n\n #  This file uses Script Encryption Obfuscator for encryption obfuscates the file, please DO NOT modify the file!\n\n\n" >"${output}"
             echo -en "${shell}" | while read -n 1 code; do [[ "${code}" == '' || "${code}" == ' ' ]] && echo ' \' >>"${output}" || echo "${code}\\" >>"${output}"; done
             echo -en "# 開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)" >>"${output}"
         } || {
-            echo -en "#!/bin/sh\n\n\n #  彩銘羽 Script Encryption Obfuscator\n\n #  バージョン: Version 1.1.0 (2024.02.11)\n\n #  開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)\n\n #  GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator\n\n #  日時: $(date '+%x %A %r')\n\n #  This file uses Script Encryption Obfuscator for encryption obfuscates the file, please DO NOT modify the file!\n\n\n"
+            echo -en "#!/bin/sh\n\n\n #  彩銘羽 Script Encryption Obfuscator\n\n #  バージョン: Version 1.1.0 (2024.02.11)\n\n #  開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)\n\n #  GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator\n\n #  日時: $(date '+%Y-%m-%d %H:%M:%S')\n\n #  This file uses Script Encryption Obfuscator for encryption obfuscates the file, please DO NOT modify the file!\n\n\n"
             echo -en "${shell}" | while read -n 1 code; do [[ "${code}" == '' || "${code}" == ' ' ]] && echo ' \' || echo "${code}\\"; done
             echo -en "# 開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)"
         }
@@ -52,7 +52,7 @@ case "${mode}" in
                         shell="{ set +x;\$(printf \"$(printf "eval" | base64 -w 0)\"|base64 -d) \"\$(echo -en \"$(echo -en "${shell}" | base64 -w 0)\"|base64 -d)\";};"
                         let num--
                     done
-                    echo -en "#!/bin/sh\n\n\n #  彩銘羽 Script Encryption Obfuscator\n\n #  バージョン: Version 1.1.0 (2024.02.11)\n\n #  開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)\n\n #  GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator\n\n #  日時: $(date '+%x %A %r')\n\n #  This file uses Script Encryption Obfuscator for encryption obfuscates the file, please DO NOT modify the file!\n\n\n" >"${output}"
+                    echo -en "#!/bin/sh\n\n\n #  彩銘羽 Script Encryption Obfuscator\n\n #  バージョン: Version 1.1.0 (2024.02.11)\n\n #  開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)\n\n #  GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator\n\n #  日時: $(date '+%Y-%m-%d %H:%M:%S')\n\n #  This file uses Script Encryption Obfuscator for encryption obfuscates the file, please DO NOT modify the file!\n\n\n" >"${output}"
                     echo -en "${shell}" | while read -n 1 code; do [[ "${code}" == '' || "${code}" == ' ' ]] && echo ' \' >>"${output}" || echo "${code}\\" >>"${output}"; done
                     echo -en "# 開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)" >>"${output}"
                 done
@@ -67,7 +67,7 @@ case "${mode}" in
                     shell="{ set +x;\$(printf \"$(printf "eval" | base64 -w 0)\"|base64 -d) \"\$(echo -en \"$(echo -en "${shell}" | base64 -w 0)\"|base64 -d)\";};"
                     let num--
                 done
-                echo -en "#!/bin/sh\n\n\n #  彩銘羽 Script Encryption Obfuscator\n\n #  バージョン: Version 1.1.0 (2024.02.11)\n\n #  開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)\n\n #  GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator\n\n #  日時: $(date '+%x %A %r')\n\n #  This file uses Script Encryption Obfuscator for encryption obfuscates the file, please DO NOT modify the file!\n\n\n" >"${output}"
+                echo -en "#!/bin/sh\n\n\n #  彩銘羽 Script Encryption Obfuscator\n\n #  バージョン: Version 1.1.0 (2024.02.11)\n\n #  開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)\n\n #  GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator\n\n #  日時: $(date '+%Y-%m-%d %H:%M:%S')\n\n #  This file uses Script Encryption Obfuscator for encryption obfuscates the file, please DO NOT modify the file!\n\n\n" >"${output}"
                 echo -en "${shell}" | while read -n 1 code; do [[ "${code}" == '' || "${code}" == ' ' ]] && echo ' \' >>"${output}" || echo "${code}\\" >>"${output}"; done
                 echo -en "# 開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)" >>"${output}"
             }
@@ -88,7 +88,7 @@ case "${mode}" in
                         shell="{ set +x;\$(printf \"$(printf "eval" | base64 -w 0)\"|base64 -d) \"\$(echo -en \"$(echo -en "${shell}" | base64 -w 0)\"|base64 -d)\";};"
                         let num--
                     done
-                    echo -en "#!/bin/sh\n\n\n #  彩銘羽 Script Encryption Obfuscator\n\n #  バージョン: Version 1.1.0 (2024.02.11)\n\n #  開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)\n\n #  GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator\n\n #  日時: $(date '+%x %A %r')\n\n #  This file uses Script Encryption Obfuscator for encryption obfuscates the file, please DO NOT modify the file!\n\n\n" >"${output}"
+                    echo -en "#!/bin/sh\n\n\n #  彩銘羽 Script Encryption Obfuscator\n\n #  バージョン: Version 1.1.0 (2024.02.11)\n\n #  開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)\n\n #  GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator\n\n #  日時: $(date '+%Y-%m-%d %H:%M:%S')\n\n #  This file uses Script Encryption Obfuscator for encryption obfuscates the file, please DO NOT modify the file!\n\n\n" >"${output}"
                     echo -en "${shell}" | while read -n 1 code; do [[ "${code}" == '' || "${code}" == ' ' ]] && echo ' \' >>"${output}" || echo "${code}\\" >>"${output}"; done
                     echo -en "# 開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)" >>"${output}"
                 done
@@ -103,7 +103,7 @@ case "${mode}" in
                     shell="{ set +x;\$(printf \"$(printf "eval" | base64 -w 0)\"|base64 -d) \"\$(echo -en \"$(echo -en "${shell}" | base64 -w 0)\"|base64 -d)\";};"
                     let num--
                 done
-                echo -en "#!/bin/sh\n\n\n #  彩銘羽 Script Encryption Obfuscator\n\n #  バージョン: Version 1.1.0 (2024.02.11)\n\n #  開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)\n\n #  GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator\n\n #  日時: $(date '+%x %A %r')\n\n #  This file uses Script Encryption Obfuscator for encryption obfuscates the file, please DO NOT modify the file!\n\n\n" >"${output}"
+                echo -en "#!/bin/sh\n\n\n #  彩銘羽 Script Encryption Obfuscator\n\n #  バージョン: Version 1.1.0 (2024.02.11)\n\n #  開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)\n\n #  GitHubリポジトリ: https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator\n\n #  日時: $(date '+%Y-%m-%d %H:%M:%S')\n\n #  This file uses Script Encryption Obfuscator for encryption obfuscates the file, please DO NOT modify the file!\n\n\n" >"${output}"
                 echo -en "${shell}" | while read -n 1 code; do [[ "${code}" == '' || "${code}" == ' ' ]] && echo ' \' >>"${output}" || echo "${code}\\" >>"${output}"; done
                 echo -en "# 開発者: 彩銘羽 (GitHubホーム: https://github.com/Cai-Ming-Yu)" >>"${output}"
             }
