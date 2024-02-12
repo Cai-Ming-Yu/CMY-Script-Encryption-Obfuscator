@@ -112,3 +112,5 @@ case "${mode}" in
     ;;
 *) exit 1 ;;
 esac
+
+exit 0
