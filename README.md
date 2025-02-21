@@ -37,4 +37,4 @@ and ```overfiles``` mode will overwrite the original file.
 - Do not use in a production environment.
 - If it works well, order a star for the project.
 
-## [License](https://github.com/Cai-Ming-Yu/CMY-Script-Encryption-Obfuscator/blob/C-M-Y/LICENSE)
+## [License](LICENSE)
